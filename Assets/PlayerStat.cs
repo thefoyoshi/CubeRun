@@ -1,6 +1,5 @@
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class PlayerStat : MonoBehaviour
 {
@@ -23,6 +22,6 @@ public class PlayerStat : MonoBehaviour
     {
         player_rb = player.GetComponent<Rigidbody>();
 
-        speeddisplay.text = player_rb.linearVelocity.magnitude.ToString() + " km/h";
+        speeddisplay.text = ((int)player_rb.linearVelocity.magnitude).ToString() + " km/h";
     }
 }
