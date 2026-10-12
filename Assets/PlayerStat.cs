@@ -10,18 +10,14 @@ public class PlayerStat : MonoBehaviour
     Rigidbody player_rb;
 
     void Start()
-    {
-        
+    { 
+        player_rb = player.GetComponent<Rigidbody>(); 
     }
 
-    void Update()
-    {
-        
-    }
+    void Update() {}
+
     void FixedUpdate()
     {
-        player_rb = player.GetComponent<Rigidbody>();
-
         speeddisplay.text = ((int)player_rb.linearVelocity.magnitude).ToString() + " km/h";
     }
 }

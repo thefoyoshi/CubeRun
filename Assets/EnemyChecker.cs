@@ -7,17 +7,16 @@ public class EnemyChecker : MonoBehaviour
 
     Transform plTf;
 
-    float attempts_count = 0;
-
     void Start()
-    {}
+    { 
+       plTf = player.GetComponent<Transform>(); 
+    }
 
     void Update()
     {}
 
     void OnCollisionEnter(Collision collision)
     {
-        plTf = player.GetComponent<Transform>();
-        if (collision.gameObject.CompareTag("enemy")) { plTf.position = new Vector3(-95.5f, 5f, 3f); attempts_count += 1; }
+        if (collision.gameObject.CompareTag("enemy")) { plTf.position = new Vector3(-95.5f, 5f, 3f);}
     }
 }
