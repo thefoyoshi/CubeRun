@@ -17,6 +17,6 @@ public class EnemyChecker : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("enemy")) { plTf.position = new Vector3(-95.5f, 5f, 3f);}
+        if (collision.gameObject.CompareTag("enemy")) { plTf.position = new Vector3(-95.5f, 5f, 3f); plTf.rotation = Quaternion.Euler(0f, 0f, 0f); }
     }
 }

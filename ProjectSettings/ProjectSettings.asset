@@ -43,7 +43,7 @@ PlayerSettings:
   - logo: {fileID: 10404, guid: 0000000000000000f000000000000000, type: 0}
     duration: 2
   - logo: {fileID: -871912824388009346, guid: 061525730a1630e48a69dbeb14819ca2, type: 3}
-    duration: 5
+    duration: 4
   m_VirtualRealitySplashScreen: {fileID: 0}
   defaultScreenWidth: 1920
   defaultScreenHeight: 1080
@@ -153,7 +153,7 @@ PlayerSettings:
   loadStoreDebugModeEnabled: 0
   visionOSBundleVersion: 1.0
   tvOSBundleVersion: 1.0
-  bundleVersion: Beta 2.0
+  bundleVersion: Pre-PublicDemo 0.1A
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
